@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/code.css">
+    <link rel="stylesheet" href="CSS/background.css">
+        <link rel="stylesheet" href="CSS/media queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/z.png" >
+    <title>Zeyad's About</title>
+</head>
+
+<body>
+ <div class="background">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+</div>
+
+<div class="text">
+<div class="main-text"><span>Zeyad</span> <span>Ahmed</span></div>
+<div class="sceond-text"> Editor ◆  Front-End Developer ◆ UI/UX Designer</div>
+<hr class="line-1">
+</div>
+
+<div class="contact">
+  <div>Contact Me :</div>
+  <hr class="line-2">
+</div>
+
+<div class="logo">
+  <div class="linkedin square">
+    <a href="https://www.linkedin.com/in/zeyad-ahmed-6ab207318/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+  <div class="github square">
+    <a href="https://github.com/Zeyad-web11" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+  </div>
+
+  <div class="email square">
+    <a href="mailto:zeyadahmed11210@gmail.com?subject=contact"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+
+  <div class="whtsapp square">
+    <a href="https://wtsi.me/201014007956" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+
+<div class="tellegram square">
+    <a href="https://t.me/Zeyad_web11" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
+  </div>
+
+  <div class="instgram square">
+    <a href="https://www.instagram.com/zeyad_11210" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <div class="threads square">
+    <a href="https://www.threads.com/@zeyad_11210" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads"></i></a>
+  </div>
+  <div class="twiter square">
+    <a href="https://x.com/zgamer15911" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+
+  <div class="tell square">
+    <a href="https://tellonym.me/Zeyad__/top3" target="_blank" rel="noopener noreferrer"><img src="Images/icons8-tellonym-72.png"  alt="Tellenyom Icon" ></a>
+  </div>
+
+  <div class="discord square" id="discord-icon" title="Click to copy username: zgamer1">
+    <i class="fa-brands fa-discord"></i>
+  </div>
+</div>
+
+
+<div class="front-end">
+    <div class="web"> <span>web</span><span> languages</span></div>
+    <div class="language"> 
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript
+          <ul class="js">
+            <li>Node.js</li>
+            <li>React.js</li>
+            <li>TypeScript</li>
+            <li>Bootstrap</li>
+            <li>JSON</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<div class="design">
+  <div class="UI"> <span>UI/UX</span> <span>programes</span></div>
+  <div class="apps">
+    <ul><li>Figma</li>
+      <li>Adobe XD</li>
+      <li>Sketch </li>
+    </ul>
+  </div>
+</div>
+
+
+<script>
+  const discordIcon = document.getElementById('discord-icon');
+  const originalTitle = discordIcon.title;
+  discordIcon.addEventListener('click', function() {
+    const discordUsername = 'zgamer1';
+    navigator.clipboard.writeText(discordUsername).then(() => {
+      discordIcon.title = 'Copied: ' + discordUsername;
+      setTimeout(() => {
+        discordIcon.title = originalTitle;
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy username: ', err);
+      discordIcon.title = 'Failed to copy!';
+      setTimeout(() => {
+        discordIcon.title = originalTitle;
+      }, 2000);
+    });
+  });
+
+
+  const box1 = document.querySelector(".design");
+const box2 = document.querySelector(".front-end");
+
+let movedUp1 = false;
+let movedUp2 = false;
+
+// تحقق من المدى (بين 768 و 991)
+const mediaQuery = window.matchMedia("(min-width: 768px) and (max-width: 1024px)");
+
+box1.addEventListener("click", () => {
+  if (mediaQuery.matches) { // يعني داخل المدى المحدد
+    if (!movedUp1) {
+      box1.style.transform = "translateY(-344px)"; // مسافة الأولى
+    } else {
+      box1.style.transform = "translateY(0)";
+    }
+    movedUp1 = !movedUp1;
+  }
+});
+
+box2.addEventListener("click", () => {
+  if (mediaQuery.matches) {
+    if (!movedUp2) {
+      box2.style.transform = "translateY(-339px)"; // مسافة الثانية
+    } else {
+      box2.style.transform = "translateY(0)";
+    }
+    movedUp2 = !movedUp2;
+  }
+});
+
+
+
+
+  </script>
+</body>
+</html>

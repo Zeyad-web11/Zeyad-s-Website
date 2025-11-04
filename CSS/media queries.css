@@ -1,0 +1,312 @@
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+@media (max-width: 399px) {
+  .text .main-text {
+    position: absolute;
+    top: 15%;
+    left : 17px;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 69px;
+    letter-spacing: 23px;
+    margin-top: -60px;
+    padding-left: 10px;
+    background: -webkit-linear-gradient(white, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text .sceond-text {
+    top: 42%;
+  }
+
+  .text .line-1 {
+    top: 50.5%;
+  }
+
+  .contact div {
+    top: 64%;
+    right: -7px;
+  }
+
+  .contact .line-2 {
+    position: absolute;
+    top: 61%;
+    width: 20%;
+    right: 40.5%;
+    border-radius: 100%;
+  }
+
+  .front-end , .design {
+  display: none;
+}
+
+}
+  
+
+ /* ========== very-small Devices (mobiles, 767px and under) ========== */
+
+@media (min-width: 400px) and (max-width: 767px) {
+.html , body {
+  height: 100%;
+  overflow: hidden;
+}
+
+  .main-text {
+    top: 27%;
+  }
+  
+  .sceond-text {
+    top: 47%;
+    letter-spacing: 1px;
+  }
+
+  .text .line-1 {
+    width: 31%;
+    right: 36.5%;
+  }
+
+  .contact div {
+    top: 61%;
+  }
+
+  .contact .line-2 {
+    width: 17%;
+    right: 43%;
+  }
+  
+  .front-end , .design {
+  display: none;
+}
+}
+
+
+
+/* ========== Small Devices (Tablets, 768px and up) ========== */
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .main-text {
+    top: 35%;
+    font-size: 50px;
+    letter-spacing: 20px;
+    white-space: nowrap;
+  }
+  
+  .sceond-text {
+    top: 45%;
+    letter-spacing: 1px;
+  }
+
+.contact div {
+  top: 60%;
+}
+
+.contact .line-2 {
+    width: 15%;
+    right: 44%;
+}
+  .front-end {
+    position: absolute;
+    left: 17%;
+    top: 60%;
+    display: flex
+;
+    flex-direction: column;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+  }
+
+  .front-end:hover {
+        transform: translateY(-386px);
+        z-index: 1; 
+  }
+
+  .front-end .web {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    top: 373px;
+    left: 287px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.front-end .language {
+  position: absolute;
+    color: white;
+    border-radius: 15px;
+    top: 469px;
+    left: 287px;
+    display: flex;
+    background-color: var(--main-color);
+}
+
+.design {
+  position: absolute;
+    left: -33%;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+  .design:hover {
+        transform: translateY(-344px);
+        z-index: 1; 
+  }
+
+.design .UI {
+  position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    top: 553px;
+    left: 321px;
+    background-color: #101821;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.design .apps {
+  position: absolute;
+    color: white;
+    border-radius: 15px;
+    top: 614px;
+    left: 304px;
+    display: flex;
+    background-color: #101821;
+    margin: 35px;
+}
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+  .main-text {
+    top: 35%;
+    font-size: 80px;
+    letter-spacing: 20px;
+    white-space: nowrap;
+  }
+  
+  .sceond-text {
+    top: 47%;
+    letter-spacing: 1px;
+    font-size: 38px;
+  }
+
+  .contact div {
+    top: 60%;
+  }
+
+  .contact .line-2 {
+    width: 15%;
+    right: 44%;
+  }
+
+  .front-end {
+    position: absolute;
+left: 29%;
+        top: 66%;  
+          display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+  }
+
+  .front-end:hover {
+    transform: translateY(-338px);
+    z-index: 1;
+  }
+
+  .front-end .web {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    top: 373px;
+    left: 287px;
+    background-color: var(--main-color);
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 15px;
+  }
+
+  .front-end .language {
+    position: absolute;
+    color: white;
+    border-radius: 15px;
+    top: 469px;
+    left: 287px;
+    display: flex;
+    background-color: var(--main-color);
+  }
+
+  .design {
+    position: absolute;
+left: -21%;
+        top: 53%;
+            display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+
+  .design:hover {
+    transform: translateY(-344px);
+    z-index: 1;
+  }
+
+  .design .UI {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    top: 553px;
+    left: 321px;
+    background-color: #101821;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 15px;
+  }
+
+  .design .apps {
+    position: absolute;
+    color: white;
+    border-radius: 15px;
+    top: 614px;
+    left: 304px;
+    display: flex;
+    background-color: #101821;
+    margin: 35px;
+  }
+}
+
