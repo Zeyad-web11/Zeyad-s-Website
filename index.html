@@ -77,34 +77,6 @@
 </div>
 
 
-<div class="front-end">
-    <div class="web"> <span>web</span><span> languages</span></div>
-    <div class="language"> 
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript
-          <ul class="js">
-            <li>Node.js</li>
-            <li>React.js</li>
-            <li>TypeScript</li>
-            <li>Bootstrap</li>
-            <li>JSON</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-</div>
-
-<div class="design">
-  <div class="UI"> <span>UI/UX</span> <span>programes</span></div>
-  <div class="apps">
-    <ul><li>Figma</li>
-      <li>Adobe XD</li>
-      <li>Sketch </li>
-    </ul>
-  </div>
-</div>
 
 
 <script>
@@ -125,41 +97,6 @@
       }, 2000);
     });
   });
-
-
-  const box1 = document.querySelector(".design");
-const box2 = document.querySelector(".front-end");
-
-let movedUp1 = false;
-let movedUp2 = false;
-
-// تحقق من المدى (بين 768 و 991)
-const mediaQuery = window.matchMedia("(min-width: 768px) and (max-width: 1024px)");
-
-box1.addEventListener("click", () => {
-  if (mediaQuery.matches) { // يعني داخل المدى المحدد
-    if (!movedUp1) {
-      box1.style.transform = "translateY(-344px)"; // مسافة الأولى
-    } else {
-      box1.style.transform = "translateY(0)";
-    }
-    movedUp1 = !movedUp1;
-  }
-});
-
-box2.addEventListener("click", () => {
-  if (mediaQuery.matches) {
-    if (!movedUp2) {
-      box2.style.transform = "translateY(-339px)"; // مسافة الثانية
-    } else {
-      box2.style.transform = "translateY(0)";
-    }
-    movedUp2 = !movedUp2;
-  }
-});
-
-
-
 
   </script>
 </body>
