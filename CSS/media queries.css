@@ -41,10 +41,6 @@
     border-radius: 100%;
   }
 
-  .front-end , .design {
-  display: none;
-}
-
 }
   
 
@@ -79,25 +75,23 @@
     right: 43%;
   }
   
-  .front-end , .design {
-  display: none;
-}
+
 }
 
 
 
 /* ========== Small Devices (Tablets, 768px and up) ========== */
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
   .main-text {
     top: 35%;
-    font-size: 50px;
+    font-size: 67px;
     letter-spacing: 20px;
     white-space: nowrap;
   }
   
   .sceond-text {
-    top: 45%;
+    top: 47%;
     letter-spacing: 1px;
   }
 
@@ -109,94 +103,9 @@
     width: 15%;
     right: 44%;
 }
-  .front-end {
-    position: absolute;
-    left: 17%;
-    top: 60%;
-    display: flex
-;
-    flex-direction: column;
-    cursor: pointer;
-    transform: translateX(-50%);
-    transition: transform 0.5s ease;
-  }
-
-  .front-end:hover {
-        transform: translateY(-386px);
-        z-index: 1; 
-  }
-
-  .front-end .web {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-    top: 373px;
-    left: 287px;
-    font-weight: bold;
-    background-color: var(--main-color);
-    padding: 30px;
-    max-width: 400px;
-    border-radius: 15px;
+ 
 }
 
-.front-end .language {
-  position: absolute;
-    color: white;
-    border-radius: 15px;
-    top: 469px;
-    left: 287px;
-    display: flex;
-    background-color: var(--main-color);
-}
-
-.design {
-  position: absolute;
-    left: -33%;
-    top: 45%;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-
-  .design:hover {
-        transform: translateY(-344px);
-        z-index: 1; 
-  }
-
-.design .UI {
-  position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-    top: 553px;
-    left: 321px;
-    background-color: #101821;
-    padding: 30px;
-    max-width: 400px;
-    border-radius: 15px;
-}
-
-.design .apps {
-  position: absolute;
-    color: white;
-    border-radius: 15px;
-    top: 614px;
-    left: 304px;
-    display: flex;
-    background-color: #101821;
-    margin: 35px;
-}
-}
 
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -223,90 +132,7 @@
     right: 44%;
   }
 
-  .front-end {
-    position: absolute;
-left: 29%;
-        top: 66%;  
-          display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transform: translateX(-50%);
-    transition: transform 0.5s ease;
+ 
   }
 
-  .front-end:hover {
-    transform: translateY(-338px);
-    z-index: 1;
-  }
-
-  .front-end .web {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-    top: 373px;
-    left: 287px;
-    background-color: var(--main-color);
-    padding: 30px;
-    max-width: 400px;
-    border-radius: 15px;
-  }
-
-  .front-end .language {
-    position: absolute;
-    color: white;
-    border-radius: 15px;
-    top: 469px;
-    left: 287px;
-    display: flex;
-    background-color: var(--main-color);
-  }
-
-  .design {
-    position: absolute;
-left: -21%;
-        top: 53%;
-            display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-  }
-
-  .design:hover {
-    transform: translateY(-344px);
-    z-index: 1;
-  }
-
-  .design .UI {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-    top: 553px;
-    left: 321px;
-    background-color: #101821;
-    padding: 30px;
-    max-width: 400px;
-    border-radius: 15px;
-  }
-
-  .design .apps {
-    position: absolute;
-    color: white;
-    border-radius: 15px;
-    top: 614px;
-    left: 304px;
-    display: flex;
-    background-color: #101821;
-    margin: 35px;
-  }
-}
 
